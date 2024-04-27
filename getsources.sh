@@ -9,7 +9,7 @@ export PATH
 rpmdev-setuptree
 
 # Get the version from the SPEC file
-MYVER=`grep ^Version *.spec |awk '{print $2}'`
+MYVER=$(grep ^Version signal-desktop.spec |awk '{print $2}')
 
 # copy the also needed patch file(s) to the RPMBUILD space
 # again this is different from the $GITHUB_WORKSPACE
